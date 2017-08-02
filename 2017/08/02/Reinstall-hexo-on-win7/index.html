@@ -5,19 +5,19 @@
   
   <title>Reinstall hexo on win7 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。 Node.js &amp;amp; NPM重新撸起Hexo，实在WIND7上了。原先装的node.js还在，于是升级了一下npm的版本 1npm -g install npm 这样，就升级到了最新版的npm。 Git我的Git已经卸载了，去官网下载了最新版的Git msi，">
+  <meta name="description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Reinstall hexo on win7">
 <meta property="og:url" content="http://yoursite.com/2017/08/02/Reinstall-hexo-on-win7/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。 Node.js &amp;amp; NPM重新撸起Hexo，实在WIND7上了。原先装的node.js还在，于是升级了一下npm的版本 1npm -g install npm 这样，就升级到了最新版的npm。 Git我的Git已经卸载了，去官网下载了最新版的Git msi，">
+<meta property="og:description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。">
 <meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/NPM%20Updated.PNG">
-<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/Hexo_install_warning.PNG">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/hexo_install_warning.PNG">
 <meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/Hexo_init_w2warnings.PNG">
-<meta property="og:updated_time" content="2017-08-02T14:39:12.000Z">
+<meta property="og:updated_time" content="2017-08-02T14:57:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Reinstall hexo on win7">
-<meta name="twitter:description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。 Node.js &amp;amp; NPM重新撸起Hexo，实在WIND7上了。原先装的node.js还在，于是升级了一下npm的版本 1npm -g install npm 这样，就升级到了最新版的npm。 Git我的Git已经卸载了，去官网下载了最新版的Git msi，">
+<meta name="twitter:description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。">
 <meta name="twitter:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/NPM%20Updated.PNG">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -89,44 +89,46 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。<br>这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。</p>
+        <hr>
+<p>时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。<br>这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。<br><a id="more"></a><br>时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。<br>这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。</p>
 <h2 id="Node-js-amp-NPM"><a href="#Node-js-amp-NPM" class="headerlink" title="Node.js &amp; NPM"></a>Node.js &amp; NPM</h2><p>重新撸起Hexo，实在WIND7上了。原先装的node.js还在，于是升级了一下npm的版本</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm -g install npm</div></pre></td></tr></table></figure>
 <p>这样，就升级到了最新版的npm。<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/NPM%20Updated.PNG" alt=""></p>
 <h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>我的Git已经卸载了，去<a href="https://git-scm.com/" target="_blank" rel="external">官网</a>下载了最新版的Git msi，并安装至PATH。这里了解到，在cmd中查看环境变量的方法为：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">SET</span> <span class="built_in">PATH</span></div></pre></td></tr></table></figure>
-<p>其中<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```cmd</div><div class="line">SET &lt;VARNAME&gt;</div></pre></td></tr></table></figure></p>
-<p>##通过SSH将Git与GitHub连接<br>为了后面完成将Hexo静态网页通过Git发布到GitHub上去，需要将Git与GitHub相连。这里为了方便，可以采用SSH Key的方式，以避免后面每次都需要输入GitHub的用户名和密码。</p>
-<p>####Step1 查看本机是否存在SSH密钥<br>检查本机主目录下是否已经存在.ssh目录，如果存在即可跳过创建SSH公钥和私钥（Step 2）。<br>打开Git Bash</p>
+<p>其中<code>SET</code>是查看所有环境变量的命令，在其后面加上具体的环境变量名，即可查看某一个环境变量的值。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">SET</span> &lt;VARNAME&gt;</div></pre></td></tr></table></figure>
+<h2 id="通过SSH将Git与GitHub连接"><a href="#通过SSH将Git与GitHub连接" class="headerlink" title="通过SSH将Git与GitHub连接"></a>通过SSH将Git与GitHub连接</h2><p>为了后面完成将Hexo静态网页通过Git发布到GitHub上去，需要将Git与GitHub相连。这里为了方便，可以采用SSH Key的方式，以避免后面每次都需要输入GitHub的用户名和密码。</p>
+<h3 id="Step1-查看本机是否存在SSH密钥"><a href="#Step1-查看本机是否存在SSH密钥" class="headerlink" title="Step1 查看本机是否存在SSH密钥"></a>Step1 查看本机是否存在SSH密钥</h3><p>检查本机主目录下是否已经存在.ssh目录，如果存在即可跳过创建SSH公钥和私钥（Step 2）。<br>打开Git Bash</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$cd</span> ~/.ssh</div></pre></td></tr></table></figure>
-<p>####Step2 创建一对新的SSH密钥<br>如果在Step1中没有找到.ssh目录，那么需要重新生成SSH秘钥。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span> <span class="comment">#提供你的邮箱地址，并创建一对密钥</span></div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/danxiaolei/.ssh/id_rsa): <span class="comment">#提供存有密钥的文件名，直接回车则按默认名存储</span></div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): <span class="comment">#提供密码，这里直接回车就不用密码了</span></div><div class="line">Enter same passphrase again:</div></pre></td></tr></table></figure>
+<h3 id="Step2-创建一对新的SSH密钥"><a href="#Step2-创建一对新的SSH密钥" class="headerlink" title="Step2 创建一对新的SSH密钥"></a>Step2 创建一对新的SSH密钥</h3><p>如果在Step1中没有找到.ssh目录，那么需要重新生成SSH秘钥。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span> <span class="comment">#提供你的邮箱地址，并创建一对密钥</span></div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/danxiaolei/.ssh/id_rsa): <span class="comment">#提供存有密钥的文件名，直接回车则按默认名存储</span></div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): <span class="comment">#提供密码，这里直接回车就不用密码了（注意，实际上在post的时候还是需要输入密码，内容为本机密码，尚不知为何）</span></div><div class="line">Enter same passphrase again:</div></pre></td></tr></table></figure>
 <p>之后得到如下秘钥：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/yourname/.ssh/id_rsa.</div><div class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/yourname/.ssh/id_rsa.pub.</div><div class="line">The key fingerprint is:</div><div class="line">SHA256:oBrE0Q*********************ZH6c your_email@example.com</div><div class="line">The key<span class="string">'s randomart image is:</span></div><div class="line"><span class="string">+---[RSA 2048]----+</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">| *************  |</span></div><div class="line"><span class="string">+----[SHA256]-----+</span></div></pre></td></tr></table></figure>
-<p>###Step 3添加密钥至GitHub<br>添加密钥到GitHub中以建立连接</p>
+<h3 id="Step-3添加密钥至GitHub"><a href="#Step-3添加密钥至GitHub" class="headerlink" title="Step 3添加密钥至GitHub"></a>Step 3添加密钥至GitHub</h3><p>添加密钥到GitHub中以建立连接</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ clip &lt; ~/.ssh/id_rsa.pub</div></pre></td></tr></table></figure>
 <p>将密钥复制到剪切板，然后打开登录GitHub -&gt; Account Settings -&gt; SSH keys and GPG keys -&gt; New SSH key -&gt; 填写并Add SSH key</p>
-<p>###Step 4 测试<br>完了之后测试一下</p>
+<h3 id="Step-4-测试"><a href="#Step-4-测试" class="headerlink" title="Step 4 测试"></a>Step 4 测试</h3><p>完了之后测试一下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
 <p>会出现以下反馈</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">The authenticity of host <span class="string">'github.com (192.30.255.113)'</span> can<span class="string">'t be established.</span></div><div class="line"><span class="string">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span></div><div class="line"><span class="string">Are you sure you want to continue connecting (yes/no)?</span></div></pre></td></tr></table></figure>
 <p>没关系，直接yes即可：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Warning: Permanently added <span class="string">'github.com,192.30.255.112'</span> (RSA) to the list of known hosts.</div><div class="line">Hi DanXL! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></div></pre></td></tr></table></figure>
 <p>这样就没问题了。</p>
-<p>###Step 5 设置个人用户名、邮箱<br>现在已经可以通过SSH链接至GitHub了。输入以下代码设置个人信息。</p>
+<h3 id="Step-5-设置个人用户名、邮箱"><a href="#Step-5-设置个人用户名、邮箱" class="headerlink" title="Step 5 设置个人用户名、邮箱"></a>Step 5 设置个人用户名、邮箱</h3><p>现在已经可以通过SSH链接至GitHub了。输入以下代码设置个人信息。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"danxiaolei"</span>//用户名，非GitHub昵称</div><div class="line">$ git config --global user.email <span class="string">"danxiaolei2008@gmail.com"</span>//填写自己的邮箱</div></pre></td></tr></table></figure>
 <p>这样，就可以安全而又方便的访问GitHub并发布了。</p>
-<p>##安装Hexo<br>辅助工具都已经准备好啦，接下来要安装Hexo了。根据<a href="https://Hexo.io/" target="_blank" rel="external">官网</a>的安装指南</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>辅助工具都已经准备好啦，接下来要安装Hexo了。根据<a href="https://Hexo.io/" target="_blank" rel="external">官网</a>的安装指南</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install Hexo-cli -g</div></pre></td></tr></table></figure>
-<p>这时，出现了一个错误<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/Hexo_install_warning.PNG" alt=""></p>
+<p>这时，出现了一个错误<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/hexo_install_warning.PNG" alt=""></p>
 <ul>
 <li>WARN1</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm WARN invalid config loglevel = &quot;notice&quot;</div><div class="line">```  </div><div class="line">WARN 在nom@5之前时默认状态，因为notice不存在。npmlog新版本才支持notice，且npmlog是npm@5所依赖的。由于用的是比较旧的npmlog，出现了因为notice不存在产生警告。可以升级npmlog，或者直接将此WARN忽略&lt;sup&gt;[1](https://github.com/npm/npm/issues/16862)&lt;/sup&gt;。</div><div class="line"></div><div class="line">* WARN2</div></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm WARN invalid config loglevel = "notice"</div><div class="line">```  </div><div class="line">WARN 在nom@<span class="number">5</span>之前时默认状态，因为notice不存在。npmlog新版本才支持notice，且npmlog是npm@<span class="number">5</span>所依赖的。由于用的是比较旧的npmlog，出现了因为notice不存在产生警告。可以升级npmlog，或者直接将此WARN忽略&lt;sup&gt;[<span class="number">1</span>](https://github.com/npm/npm/issues/<span class="number">16862</span>)&lt;/sup&gt;。</div><div class="line"></div><div class="line">* WARN2</div></pre></td></tr></table></figure>
 <p>npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.2 (node_modules\Hexo-cli\node_modules\fsevents):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.2: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125;(current:&#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</div></pre></td></tr></table></figure></p>
 <p>这是由于在错误的平台环境上使用npm-shrinkwrap.json来安装fsevents模块导致的。需要的os是darwin，我们是在win32环境下安装的，所以出现了问题。将npm降级到3.10.7即可解决问题。</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm -g install npm@<span class="number">3</span>.<span class="number">10</span>.<span class="number">7</span></div></pre></td></tr></table></figure>
-<p>事实上，Milkemaccana等人提议将此<figure class="highlight plain"><figcaption><span>DEPENDENCY```<sup>[3](https://stackoverflow.com/questions/35644708/what-does-npm-mean-by-skipping-failed-optional-dependency)</sup>。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">所以，以上两个问题都是可以忽略掉的。因而，我们的安装是成功的。</div><div class="line"></div><div class="line">##Hexo的使用</div><div class="line">安装完成之后，我们去初始化、写内容、发布即可。</div><div class="line"></div><div class="line">```cmd</div><div class="line">cd E:\GPage\danxl.github.io</div><div class="line">md Hexo</div><div class="line">Hexo init Hexo</div><div class="line">cd Hexo</div><div class="line">npm install</div></pre></td></tr></table></figure></p>
+<p>事实上，Milkemaccana等人提议将此<figure class="highlight plain"><figcaption><span>DEPENDENCY```<sup>[3](https://stackoverflow.com/questions/35644708/what-does-npm-mean-by-skipping-failed-optional-dependency)</sup>。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">所以，以上两个问题都是可以忽略掉的。因而，我们的安装是成功的。</div><div class="line"></div><div class="line">## Hexo的使用</div><div class="line">安装完成之后，我们去初始化、写内容、发布即可。</div><div class="line"></div><div class="line">```cmd</div><div class="line">cd E:\GPage\danxl.github.io</div><div class="line">md Hexo</div><div class="line">Hexo init Hexo</div><div class="line">cd Hexo</div><div class="line">npm install</div></pre></td></tr></table></figure></p>
 <p>注意此处需要cmd拥有管理员权限，否则会因为权限问题导致初始化失败。另外，Hexo init 后面的“Hexo”是文件名，没有特别的意思。:joy:<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/Hexo_init_w2warnings.PNG" alt=""><br>虽然之前出现的WARN仍然在，但是初始化已经完成。npm install会继续安装运行Hexo所需要的所有组件。</p>
 <p>这个地方我还需要进行Hexo与GitHub Pages的关联。<br>在Hexo目录中找到_config.yml，进行关联账号</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: https://Hexo.io/docs/deployment.html</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:DanXL/DanXL.github.io.git</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure>
@@ -140,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/02/Reinstall-hexo-on-win7/" data-id="cj5v4cvoy0000gg5ujjykjrx2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/02/Reinstall-hexo-on-win7/" data-id="cj5v4zpiw0001lb5ueoxke9ci" class="article-share-link">Share</a>
       
       
     </footer>
