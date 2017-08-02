@@ -5,19 +5,19 @@
   
   <title>Reinstall hexo on win7 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。">
+  <meta name="description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装Hexo的过程，以记录一下自己所遇到的几个问题。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Reinstall hexo on win7">
 <meta property="og:url" content="http://yoursite.com/2017/08/02/Reinstall-hexo-on-win7/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。">
+<meta property="og:description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装Hexo的过程，以记录一下自己所遇到的几个问题。">
 <meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/NPM%20Updated.PNG">
 <meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/hexo_install_warning.PNG">
-<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/Hexo_init_w2warnings.PNG">
-<meta property="og:updated_time" content="2017-08-02T14:57:28.000Z">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/hexo_init_w2warnings.PNG">
+<meta property="og:updated_time" content="2017-08-02T15:11:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Reinstall hexo on win7">
-<meta name="twitter:description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。">
+<meta name="twitter:description" content="时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。这里简述一下重新安装Hexo的过程，以记录一下自己所遇到的几个问题。">
 <meta name="twitter:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/NPM%20Updated.PNG">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -90,7 +90,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。<br>这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。<br><a id="more"></a><br>时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。<br>这里简述一下重新安装HexoHexo的过程，以记录一下自己所遇到的几个问题。</p>
+<p>时隔许久，再次回来，决定把博客写起来，当随笔，以助思考。<br>这里简述一下重新安装Hexo的过程，以记录一下自己所遇到的几个问题。<br><a id="more"></a></p>
 <h2 id="Node-js-amp-NPM"><a href="#Node-js-amp-NPM" class="headerlink" title="Node.js &amp; NPM"></a>Node.js &amp; NPM</h2><p>重新撸起Hexo，实在WIND7上了。原先装的node.js还在，于是升级了一下npm的版本</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm -g install npm</div></pre></td></tr></table></figure>
 <p>这样，就升级到了最新版的npm。<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/NPM%20Updated.PNG" alt=""></p>
@@ -121,15 +121,14 @@
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>辅助工具都已经准备好啦，接下来要安装Hexo了。根据<a href="https://Hexo.io/" target="_blank" rel="external">官网</a>的安装指南</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install Hexo-cli -g</div></pre></td></tr></table></figure>
 <p>这时，出现了一个错误<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/hexo_install_warning.PNG" alt=""></p>
-<ul>
-<li>WARN1</li>
-</ul>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm WARN invalid config loglevel = "notice"</div><div class="line">```  </div><div class="line">WARN 在nom@<span class="number">5</span>之前时默认状态，因为notice不存在。npmlog新版本才支持notice，且npmlog是npm@<span class="number">5</span>所依赖的。由于用的是比较旧的npmlog，出现了因为notice不存在产生警告。可以升级npmlog，或者直接将此WARN忽略&lt;sup&gt;[<span class="number">1</span>](https://github.com/npm/npm/issues/<span class="number">16862</span>)&lt;/sup&gt;。</div><div class="line"></div><div class="line">* WARN2</div></pre></td></tr></table></figure>
-<p>npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.2 (node_modules\Hexo-cli\node_modules\fsevents):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.2: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125;(current:&#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</div></pre></td></tr></table></figure></p>
+<p>1) WARN1</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">npm WARN invalid config loglevel = "notice"  </div><div class="line">``` </div><div class="line">WARN 在nom@<span class="number">5</span>之前时默认状态，因为notice不存在。npmlog新版本才支持notice，且npmlog是npm@<span class="number">5</span>所依赖的。由于用的是比较旧的npmlog，出现了因为notice不存在产生警告。可以升级npmlog，或者直接将此WARN忽略&lt;sup&gt;[<span class="number">1</span>](https://github.com/npm/npm/issues/<span class="number">16862</span>)&lt;/sup&gt;。</div><div class="line"></div><div class="line"><span class="number">2</span>) WARN2</div><div class="line"></div><div class="line">```<span class="built_in">cmd</span></div><div class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@<span class="number">1</span>.<span class="number">1</span>.<span class="number">2</span> (node_modules\Hexo-cli\node_modules\fsevents):</div><div class="line">```  </div><div class="line"></div><div class="line">```<span class="built_in">cmd</span></div><div class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@<span class="number">1</span>.<span class="number">1</span>.<span class="number">2</span>: wanted &#123;"os":"darwin","arch":"any"&#125;(current:&#123;"os":"win32","arch":"x64"&#125;)</div></pre></td></tr></table></figure>
 <p>这是由于在错误的平台环境上使用npm-shrinkwrap.json来安装fsevents模块导致的。需要的os是darwin，我们是在win32环境下安装的，所以出现了问题。将npm降级到3.10.7即可解决问题。</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm -g install npm@<span class="number">3</span>.<span class="number">10</span>.<span class="number">7</span></div></pre></td></tr></table></figure>
-<p>事实上，Milkemaccana等人提议将此<figure class="highlight plain"><figcaption><span>DEPENDENCY```<sup>[3](https://stackoverflow.com/questions/35644708/what-does-npm-mean-by-skipping-failed-optional-dependency)</sup>。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">所以，以上两个问题都是可以忽略掉的。因而，我们的安装是成功的。</div><div class="line"></div><div class="line">## Hexo的使用</div><div class="line">安装完成之后，我们去初始化、写内容、发布即可。</div><div class="line"></div><div class="line">```cmd</div><div class="line">cd E:\GPage\danxl.github.io</div><div class="line">md Hexo</div><div class="line">Hexo init Hexo</div><div class="line">cd Hexo</div><div class="line">npm install</div></pre></td></tr></table></figure></p>
-<p>注意此处需要cmd拥有管理员权限，否则会因为权限问题导致初始化失败。另外，Hexo init 后面的“Hexo”是文件名，没有特别的意思。:joy:<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/Hexo_init_w2warnings.PNG" alt=""><br>虽然之前出现的WARN仍然在，但是初始化已经完成。npm install会继续安装运行Hexo所需要的所有组件。</p>
+<p>事实上，Milkemaccana等人提议将此<code>WARN</code>改成<code>INFO</code>，或者直接不显示，毕竟跟自己的OS并没有关系<sup><a href="https://github.com/npm/npm/issues/11632#1" target="_blank" rel="external">2</a></sup>。他在stackoverflow上表示，fsevents在需要时，仍然是正常工作的，并不会有什么问题，所谓<code>OPTIONAL DEPENDENCY</code><sup><a href="https://stackoverflow.com/questions/35644708/what-does-npm-mean-by-skipping-failed-optional-dependency" target="_blank" rel="external">3</a></sup>。<br>所以，以上两个问题都是可以忽略掉的。因而，我们的安装是成功的。</p>
+<h2 id="Hexo的使用"><a href="#Hexo的使用" class="headerlink" title="Hexo的使用"></a>Hexo的使用</h2><p>安装完成之后，我们去初始化、写内容、发布即可。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> E:\GPage\danxl.github.io</div><div class="line"><span class="built_in">md</span> Hexo</div><div class="line">Hexo init Hexo</div><div class="line"><span class="built_in">cd</span> Hexo</div><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>注意此处需要cmd拥有管理员权限，否则会因为权限问题导致初始化失败。另外，Hexo init 后面的“Hexo”是文件名，没有特别的意思。:joy:<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170726174131/Article004/jpg/hexo_init_w2warnings.PNG" alt=""><br>虽然之前出现的WARN仍然在，但是初始化已经完成。npm install会继续安装运行Hexo所需要的所有组件。</p>
 <p>这个地方我还需要进行Hexo与GitHub Pages的关联。<br>在Hexo目录中找到_config.yml，进行关联账号</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: https://Hexo.io/docs/deployment.html</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:DanXL/DanXL.github.io.git</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure>
 <p>再回到cmd中，安装上git形式部署Hexo的模块，执行</p>
@@ -142,7 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/02/Reinstall-hexo-on-win7/" data-id="cj5v4zpiw0001lb5ueoxke9ci" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/02/Reinstall-hexo-on-win7/" data-id="cj5v5ilb80004oj5uhyhsb88n" class="article-share-link">Share</a>
       
       
     </footer>
