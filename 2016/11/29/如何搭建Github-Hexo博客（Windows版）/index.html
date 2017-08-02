@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何搭建Github+Hexo博客（windows版） | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这篇文章主要介绍的是如何在windows上去搭建一个Github+Hexo博客。算是我自己在搭建这样一个博客的记录。不过，我本身建起来这个博客是从MAC上进行的，这部分是自己熟悉了之后又在windows上重新部署了一遍，以实现跨平台的博客更新。">
+<meta name="keywords" content="tutorial">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何搭建Github+Hexo博客（windows版）">
+<meta property="og:url" content="http://yoursite.com/2016/11/29/如何搭建Github-Hexo博客（Windows版）/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="这篇文章主要介绍的是如何在windows上去搭建一个Github+Hexo博客。算是我自己在搭建这样一个博客的记录。不过，我本身建起来这个博客是从MAC上进行的，这部分是自己熟悉了之后又在windows上重新部署了一遍，以实现跨平台的博客更新。">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/hexoinstalled.PNG">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/hexofirsttime.png">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage1.PNG">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage2.PNG">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage3.PNG">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage4.PNG">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage5.PNG">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/NewArticle1.PNG">
+<meta property="og:updated_time" content="2016-12-19T18:19:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何搭建Github+Hexo博客（windows版）">
+<meta name="twitter:description" content="这篇文章主要介绍的是如何在windows上去搭建一个Github+Hexo博客。算是我自己在搭建这样一个博客的记录。不过，我本身建起来这个博客是从MAC上进行的，这部分是自己熟悉了之后又在windows上重新部署了一遍，以实现跨平台的博客更新。">
+<meta name="twitter:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/hexoinstalled.PNG">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-如何搭建Github-Hexo博客（Windows版）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/29/如何搭建Github-Hexo博客（Windows版）/" class="article-date">
+  <time datetime="2016-11-29T07:38:31.000Z" itemprop="datePublished">2016-11-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      如何搭建Github+Hexo博客（windows版）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>这篇文章主要介绍的是如何在windows上去搭建一个Github+Hexo博客。算是我自己在搭建这样一个博客的记录。不过，我本身建起来这个博客是从MAC上进行的，这部分是自己熟悉了之后又在windows上重新部署了一遍，以实现跨平台的博客更新。<br><a id="more"></a></p>
+<p>利用Hexo在Github上搭建博客主要分三部分：  </p>
+<ol>
+<li>环境搭建，包括node.js、git和Hexo的安装和部署；  </li>
+<li>github.com中gh-pages的创建；  </li>
+<li>本地新文章的创建和发布。<br>下面就这三条一一讲解。</li>
+</ol>
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>环境的搭建和部署包括有node.js、git、Hexo三部分。</p>
+<h4 id="下载和安装node-js"><a href="#下载和安装node-js" class="headerlink" title="下载和安装node.js"></a>下载和安装node.js</h4><p>node.js的下载可以在<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>官网进行下载。不过，墙内的下载速度极其缓慢，建议GFW内的同学翻墙下载。安装的时候一路Next就可以了。不过需要注意，在安装时将nodejs和npm都加入环境变量中。安装完在cmd中输入</p>
+<pre><code>node -version
+npm -version
+</code></pre><p>可以检查版本信息。其中npm是node.js中已经包含的内容，如果缺少的话，可以通过以下命令来手动安装：<br>win:</p>
+<pre><code>npm install nmp -g
+</code></pre><h4 id="下载和安装git"><a href="#下载和安装git" class="headerlink" title="下载和安装git"></a>下载和安装git</h4><p>git的安装也很简单，在<a href="https://git-scm.com/" target="_blank" rel="external">Git官网</a>下载先来之后，一路Next，留意将git添加环境变量$PATH中即可。git安装完之后有git bash、git GUI和git CMD三部分。也可以用</p>
+<pre><code>git --version 
+</code></pre><p>来查看所安装的git的版本信息。</p>
+<h4 id="Hexo的安装与部署"><a href="#Hexo的安装与部署" class="headerlink" title="Hexo的安装与部署"></a>Hexo的安装与部署</h4><p>Hexo的安装可以通过npm来进行。我们在适当的文件夹中创建一块用来配置Hexo的地方，我这里使用的是</p>
+<pre><code>E:
+cd dandocs\blog\danxl.github.io\hexo
+</code></pre><p>注意，这里的<em>danxl.github.io</em>是我的github上的仓库名，用在这里当文件夹名是为了方便识别，也可以使用别的名字。在这个文件夹中，进行Hexo安装。</p>
+<pre><code>npm install hexo-cli -g
+</code></pre><p>安装过程中，会有一些WARN警告，这是因为部分内容因为GFW的关系没有办法下载资源进行安装，但这并不影响使用。然后在输入</p>
+<pre><code>npm install hexo --save
+npm install hexo-generator-index --save
+npm install hexo-generator-archive --save
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm install hexo-server --save
+npm install hexo-deployer-git --save
+npm install hexo-deployer-heroku --save
+npm install hexo-deployer-rsync --save
+npm install hexo-deployer-openshift --save
+</code></pre><p>以及插件部分</p>
+<pre><code>npm install hexo-renderer-marked@0.2 --save
+npm install hexo-renderer-stylus@0.2 --save
+npm install hexo-renderer-feed@0.2 --save
+npm install hexo-renderer-sitemap@0.2 --save
+</code></pre><p>通过执行</p>
+<pre><code>hexo -v
+</code></pre><p>我们可以是判断我们是不是完成了Hexo的安装。 </p>
+<p><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/hexoinstalled.PNG" alt="githubpage1"></p>
+<p>安装结束的Hexo我们就可以进行初始化使用了。</p>
+<pre><code>hexo init
+npm install
+</code></pre><p>然后npm将会自动安装Hexo运行所需要的所有组件，只需静静等待即可。<br>Hexo的使用方法是先生成网页</p>
+<pre><code>hexo generate
+</code></pre><p>然后运行</p>
+<pre><code>hexo server
+</code></pre><p>在浏览器中输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>即可看到Hexo的测试页面。</p>
+<p><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/hexofirsttime.png" alt="githubpage2"></p>
+<p>以下是Hexo的一些常用指令：</p>
+<pre><code>hexo server ::abv as &apos;hexo s&apos;，用于启动本地服务器，默认地址为：http://localhost:4000/。
+hexo new &quot;新文章 1&quot; :: abv as &apos;hexo n &quot;新文章 1&quot;&apos;，用于新建标题为“新文章 1”的文章，当标题中有空格时需要有引号，否则引号可以省略掉。
+hexo generate ::abv as &apos;hexo g&apos;,生成网站静态文件到默认的public文件夹中，便于查看，或者手动部署。如果自动部署则直接用 deploy即可。
+hexo deploy ::abv as &apos;hexo d&apos;，自动生成网站静态文件，并部署到设定的仓库。
+hexo clean ::清楚缓存文件db.json和已经生成的静态文件public。网站显示异常时可用此命令重置。
+hexo new page aboutme ::同样new可以简写成n，此处为新建一个标题为aboutme的页面，默认地址为：主页地址/aboutme/。页面可以为中文，但一般为英文，基本可文章一样，但是不会出现在文章列表和归档中，也不支持分类和tag。
+</code></pre><p>也可将多歌指令组合在一起使用</p>
+<pre><code>hexo clean &amp;&amp; hexo s
+hexo clean &amp;&amp; hexo d
+</code></pre><p>需要删掉用命令新建的文章或者页面时，只需要将hexo/source中的对应文件删掉即可。更多命令可见<a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">官方文件</a></p>
+<h2 id="github配置"><a href="#github配置" class="headerlink" title="github配置"></a>github配置</h2><p>在本地安装完所需环境之后，我们来设置github上的gh-pages页面。<br>注册github账号就不赘述了，与别的网站注册没有什么差别。注册完之后，我们在创建一个仓库，名为githubusername.github.io。<strong>注意，仓库名中一定要使用github的用户名，严格一致，这样才能最后地址生效。否则的话，最后的主页名会变成githubusername.github.com/otherusername.github.io，而不是所希望的githubusername.github.io的样子。</strong>创建的时候记得勾选上README初始化。<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage1.PNG" alt="githubpage3"></p>
+<p>点击Create repository之后<br>在仓库页面的最右侧tag有一个setting，<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage2.PNG" alt="githubpage4"></p>
+<p>进去setting之后往下翻可以找到GitHub Pages，<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage3.PNG" alt="githubpage5"></p>
+<p>点击<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage4.PNG" alt="githubpage6"><br>，便可以自动生成一个Github Page。</p>
+<p><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/githubpage5.PNG" alt="githubpage7"></p>
+<p>这样，咱们的Github Pages便生成了，主页的网址也会显示在上面，即githubusername.github.io。</p>
+<p>然后，我们在对Hexo目录下的 _config.yml进行编辑已关联账号。<br>找到_config.yml中的deploy部分，修改如下</p>
+<pre><code>deploy:
+    type: git
+    repo: git@github.com:DanXL/danxl.github.io.git
+    branch: master
+</code></pre><p>然后执行</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>即可。</p>
+<h2 id="本地创建新文章并发布"><a href="#本地创建新文章并发布" class="headerlink" title="本地创建新文章并发布"></a>本地创建新文章并发布</h2><p>本地的环境部署好，gh-page生成之后，我们就可以写博客了。<br>进入hexo/source中，我们所有的文章都会以.md的格式存在_post中，这里的.md会在执行指令</p>
+<pre><code>hexo generate
+</code></pre><p>之后被渲染。<br>首先，我们创建一篇新文章，</p>
+<pre><code>hexo new &lt;filename&gt;
+</code></pre><p>如</p>
+<pre><code>hexo new &quot;如何搭建Github+Hexo博客&quot;
+</code></pre><p>那么，在hexo/source/_post中就会生成一个名为“如何搭建Github+Hexo博客”的.md文件，默认的Layout是post。参数Layout会在以后在详述。<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161129153831/Article002/jpg/NewArticle1.PNG" alt="githubpage8"></p>
+<p>利用Markdown编辑器，对此.md文件进行编辑即可——正如我现在所做的一样。这里推荐MarkDownPad<a href="http://w3cboy.com/post/2014/10/MarkdownPad%E6%B3%A8%E5%86%8C%E7%A0%81/" target="_blank" rel="external">。</a>这是大家认为windows上最好的Markdown编辑器了。另外，也可以考虑一个私攒的<a href="https://github.com/chenguanzhou/MarkDownEditor/releases" target="_blank" rel="external">MarkDownEditor</a>，只是墙内的同学无法下载。<br>然后，对于编辑完的.md文件，利用指令</p>
+<pre><code>hexo generate
+</code></pre><p>来渲染，并生成静态文件，可供查看。再利用</p>
+<pre><code>hexo deploy
+</code></pre><p>来进行部署。这里手动生成了静态文件，所以也可以把public中的内容手动push到github中对应的地方，也可以完成部署。<br>至此，一篇文章的创建，即完成了:tada:。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/29/如何搭建Github-Hexo博客（Windows版）/" data-id="cj5v4cvp80002gg5u8j0wsvc4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          如何搭建Github-Hexo博客（Mac OS Sierra版）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/26/开篇/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">开篇</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/main/">main</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/main/" style="font-size: 10px;">main</a> <a href="/tags/tutorial/" style="font-size: 10px;">tutorial</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/02/Reinstall-hexo-on-win7/">Reinstall hexo on win7</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/">如何搭建Github-Hexo博客（Mac OS Sierra版）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/29/如何搭建Github-Hexo博客（Windows版）/">如何搭建Github+Hexo博客（windows版）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/26/开篇/">开篇</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

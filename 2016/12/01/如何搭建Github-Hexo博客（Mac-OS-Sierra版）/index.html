@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何搭建Github-Hexo博客（Mac OS Sierra版） | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前面一篇文章说了，其实我的这个博客第一遍是从我Sierra上搭建起来的，然后再跨平台时搭建了Windows 7上的版本，并写下了上一篇教程。那，其实这个两个平台搭建基本类似，只是一些指令上的差异。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何搭建Github-Hexo博客（Mac OS Sierra版）">
+<meta property="og:url" content="http://yoursite.com/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前面一篇文章说了，其实我的这个博客第一遍是从我Sierra上搭建起来的，然后再跨平台时搭建了Windows 7上的版本，并写下了上一篇教程。那，其实这个两个平台搭建基本类似，只是一些指令上的差异。">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161201131956/Article003/jpg/HexoServer.png">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161201131956/Article003/jpg/HexoNew.png">
+<meta property="og:updated_time" content="2016-12-19T18:19:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何搭建Github-Hexo博客（Mac OS Sierra版）">
+<meta name="twitter:description" content="前面一篇文章说了，其实我的这个博客第一遍是从我Sierra上搭建起来的，然后再跨平台时搭建了Windows 7上的版本，并写下了上一篇教程。那，其实这个两个平台搭建基本类似，只是一些指令上的差异。">
+<meta name="twitter:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161201131956/Article003/jpg/HexoServer.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-如何搭建Github-Hexo博客（Mac-OS-Sierra版）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/" class="article-date">
+  <time datetime="2016-12-01T05:19:56.000Z" itemprop="datePublished">2016-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      如何搭建Github-Hexo博客（Mac OS Sierra版）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前面一篇文章说了，其实我的这个博客第一遍是从我Sierra上搭建起来的，然后再跨平台时搭建了Windows 7上的版本，并写下了上一篇教程。那，其实这个两个平台搭建基本类似，只是一些指令上的差异。<br><a id="more"></a></p>
+<p>在搭建Sierra+Github+Hexo时，主要参考了<a href="http://www.jianshu.com/p/fd878edb95e7" target="_blank" rel="external">Shumin_Wu</a>的教程，基本上算是一篇很详实的搭建教程。一直也是同样的三部分： </p>
+<ol>
+<li>环境搭建，包括node.js、homebrew、git和Hexo的安装和部署；</li>
+<li>github.com中gh-pages的创建； </li>
+<li>本地新文章的创建和发布。  </li>
+</ol>
+<h2 id="环境搭建，包括node-js、homebrew、Hexo的安装"><a href="#环境搭建，包括node-js、homebrew、Hexo的安装" class="headerlink" title="环境搭建，包括node.js、homebrew、Hexo的安装"></a>环境搭建，包括node.js、homebrew、Hexo的安装</h2><h4 id="下载node-js并安装"><a href="#下载node-js并安装" class="headerlink" title="下载node.js并安装"></a>下载node.js并安装</h4><p>node.js的安装由于网络的原因，建议还是从有效途径下载安装包后，再进行本地安装，如科学上网。不推荐使用brew来安装，会被墙掉。<br>成功安装后，Terminal中执行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$node -version</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$npm -version</div></pre></td></tr></table></figure>
+<p>可以查看node.js的版本，其中npm是node.js的安装包中所集成的。</p>
+<h4 id="下载homebrew并安装"><a href="#下载homebrew并安装" class="headerlink" title="下载homebrew并安装"></a>下载homebrew并安装</h4><p>homebrew是OSX上用来安装或者卸载软件常用的一个软件，我们可以用来安装git。可以在<a href="http://brew.sh/index_zh-cn.html" target="_blank" rel="external">homebrew官网</a>来下载Homebrew，上面的安装方法也很详实。注意此处可能需要管理员权限sudo。否则会出现安装失败的情形。 </p>
+<h4 id="下载git并安装"><a href="#下载git并安装" class="headerlink" title="下载git并安装"></a>下载git并安装</h4><p>git的安装其实有几种方法，可以用<a href="https://git-scm.com/downloads" target="_blank" rel="external">Git OSX installer</a>来安装，也可以通过Homebrew或者MacPorts来安装。由于墙内下载安装包困难，MacPorts又需要XCode的支持，我在这里选择了小巧而方便的Homebrew的方法。直接输入terminal指令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ sudo brew install git</div></pre></td></tr></table></figure>
+<p>即可。<br>这里对terminal操作不熟悉的同学，直接下载<a href="https://central.github.com/mac/latest" target="_blank" rel="external">github desktop for mac</a>就好了。</p>
+<h4 id="下载Hexo并安装"><a href="#下载Hexo并安装" class="headerlink" title="下载Hexo并安装"></a>下载Hexo并安装</h4><p>Hexo的安装也是参考<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官网文档</a>的指导，在满足的了preacquision的Git和node.js之后，只需要利用npm进行安装即可。<br>在使用命令进行安装时，除了系统软件，都会安装到当前路径下。hexo和npm在安装的时候有默认的文件路径，因此我们不用刻意创建文件夹。<br>在安装hexo的时候有可能会遇到以下错误：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123; [Error: Cannot find module './build/Release/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND' &#125;  </div><div class="line">&#123; [Error: Cannot find module './build/default/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND' &#125;  </div><div class="line">&#123; [Error: Cannot find module './build/Debug/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND' &#125;</div></pre></td></tr></table></figure>
+<p>这是因为不分组件被GFW挡住了，换一个源即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo --no-optional</div><div class="line">```  </div><div class="line">hexo 安装成功后，运行</div><div class="line"></div><div class="line">```shell</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ hexo -v</div><div class="line">```   </div><div class="line">检测安装是否成功。  </div><div class="line">另外，一些hexo的组件需要单独安装的话，使用以下命令：</div><div class="line"></div><div class="line">```shell</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo --save  </div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-index --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-archive --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-category --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-tag --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-server --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-git --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-heroku --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-rsybc --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-openshift --save</div></pre></td></tr></table></figure>
+<p>以及插件部分：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-renderer-marked@0.2 --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-renderer-stylus@0.2 --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-renderer-feed@0.2 --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-renderer-sitemap@0.2 --save</div></pre></td></tr></table></figure>
+<p>安装完成之后，我们就可以使用。</p>
+<p>对于Hexo的使用，从初始化开始：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ hexo init</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install</div></pre></td></tr></table></figure>
+<p>需要生成网页的话，使用命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ hexo generate</div></pre></td></tr></table></figure>
+<p>然后运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ hexo server</div></pre></td></tr></table></figure>
+<p>在浏览器中输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>即可看到Hexo的测试页面<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161201131956/Article003/jpg/HexoServer.png" alt="hexoserver">  </p>
+<p>关于hexo的一些常见命令和Windows环境下的一样，在此就不赘述了。</p>
+<h2 id="Github中git-pages的创建"><a href="#Github中git-pages的创建" class="headerlink" title="Github中git-pages的创建"></a>Github中git-pages的创建</h2><p>这里，git-pages的创建没有区分操作系统，所以和Windows系统中介绍的一致，请参考<a href="https://danxl.github.io/2016/11/29/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAGithub-Hexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">如何搭建Github+Hexo博客（windows版）</a>。  </p>
+<h2 id="本地文章的创建并发布"><a href="#本地文章的创建并发布" class="headerlink" title="本地文章的创建并发布"></a>本地文章的创建并发布</h2><p>环境部署完毕，gh-page设置好之后，创建文章并发布出来即可。<br>想要生成一篇文章，首先我们利用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:hexo xiaoleidan$ hexo new MyFirstPost</div><div class="line">xiaoleis-MacBook-Pro:hexo xiaoleidan$ hexo new "My First Post"</div></pre></td></tr></table></figure>
+<p>这种方式来创建名为“MyFirstPost”和“My First Post”。注意，这里第一行没有使用引号，而第二行使用了，是因为第二行中存在有空格。当没有空格时，是可以将引号省略掉的。新生成的文件会以文件名作为标题名。<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20161201131956/Article003/jpg/HexoNew.png" alt="hexonew">  </p>
+<p>同样地，hexo/source中保存了我们所生成的文章，这些文章以.md的格式保存在_post中，_post是咱们写文章所采用的layout，也可以换成别的（如_page、_draft等）。这个.md文件可以使用markdown编辑器来编辑。目前我使用的编辑器是<a href="http://macdown.uranusjr.com/" target="_blank" rel="external">MacDown</a>。利用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:hexo xiaoleidan$ hexo generate</div></pre></td></tr></table></figure>
+<p>之后被渲染成HTML格式。然后</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:hexo xiaoleidan$ hexo deploy</div></pre></td></tr></table></figure>
+<p>来部署。这里手动生成了静态文件，所以也可以把public中的文件，推送到github对应的位置中。注意，不好包含public文件，只推送里面的文件即可。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/" data-id="cj5v4cvp40001gg5uanfhkvwm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/02/Reinstall-hexo-on-win7/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Reinstall hexo on win7
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/29/如何搭建Github-Hexo博客（Windows版）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">如何搭建Github+Hexo博客（windows版）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/main/">main</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/main/" style="font-size: 10px;">main</a> <a href="/tags/tutorial/" style="font-size: 10px;">tutorial</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/02/Reinstall-hexo-on-win7/">Reinstall hexo on win7</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/">如何搭建Github-Hexo博客（Mac OS Sierra版）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/29/如何搭建Github-Hexo博客（Windows版）/">如何搭建Github+Hexo博客（windows版）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/26/开篇/">开篇</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
