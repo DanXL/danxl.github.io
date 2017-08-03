@@ -13,7 +13,7 @@
 <meta property="og:description" content="前面一篇文章说了，其实我的这个博客第一遍是从我Sierra上搭建起来的，然后再跨平台时搭建了Windows 7上的版本，并写下了上一篇教程。那，其实这个两个平台搭建基本类似，只是一些指令上的差异。">
 <meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161201131956/Article003/jpg/HexoServer.png">
 <meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20161201131956/Article003/jpg/HexoNew.png">
-<meta property="og:updated_time" content="2016-12-19T18:19:30.000Z">
+<meta property="og:updated_time" content="2017-08-03T16:31:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何搭建Github-Hexo博客（Mac OS Sierra版）">
 <meta name="twitter:description" content="前面一篇文章说了，其实我的这个博客第一遍是从我Sierra上搭建起来的，然后再跨平台时搭建了Windows 7上的版本，并写下了上一篇教程。那，其实这个两个平台搭建基本类似，只是一些指令上的差异。">
@@ -57,7 +57,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -105,7 +105,11 @@
 <h4 id="下载Hexo并安装"><a href="#下载Hexo并安装" class="headerlink" title="下载Hexo并安装"></a>下载Hexo并安装</h4><p>Hexo的安装也是参考<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官网文档</a>的指导，在满足的了preacquision的Git和node.js之后，只需要利用npm进行安装即可。<br>在使用命令进行安装时，除了系统软件，都会安装到当前路径下。hexo和npm在安装的时候有默认的文件路径，因此我们不用刻意创建文件夹。<br>在安装hexo的时候有可能会遇到以下错误：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123; [Error: Cannot find module './build/Release/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND' &#125;  </div><div class="line">&#123; [Error: Cannot find module './build/default/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND' &#125;  </div><div class="line">&#123; [Error: Cannot find module './build/Debug/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND' &#125;</div></pre></td></tr></table></figure>
 <p>这是因为不分组件被GFW挡住了，换一个源即可：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo --no-optional</div><div class="line">```  </div><div class="line">hexo 安装成功后，运行</div><div class="line"></div><div class="line">```shell</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ hexo -v</div><div class="line">```   </div><div class="line">检测安装是否成功。  </div><div class="line">另外，一些hexo的组件需要单独安装的话，使用以下命令：</div><div class="line"></div><div class="line">```shell</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo --save  </div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-index --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-archive --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-category --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-tag --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-server --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-git --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-heroku --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-rsybc --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-openshift --save</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo --no-optional</div></pre></td></tr></table></figure>
+<p>hexo 安装成功后，运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ hexo -v</div></pre></td></tr></table></figure>
+<p>检测安装是否成功。<br>另外，一些hexo的组件需要单独安装的话，使用以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo --save  </div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-index --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-archive --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-category --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-generator-tag --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-server --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-git --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-heroku --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-rsybc --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-deployer-openshift --save</div></pre></td></tr></table></figure>
 <p>以及插件部分：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-renderer-marked@0.2 --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-renderer-stylus@0.2 --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-renderer-feed@0.2 --save</div><div class="line">xiaoleis-MacBook-Pro:~xiaoleidan$ npm install hexo-renderer-sitemap@0.2 --save</div></pre></td></tr></table></figure>
 <p>安装完成之后，我们就可以使用。</p>
@@ -130,7 +134,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/" data-id="cj5vnlzky0002zn5u3lq62n8f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/" data-id="cj5wntypb0001215u2f3vbvhj" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -140,7 +144,7 @@
 <nav id="article-nav">
   
     <a href="/2017/08/02/Reinstall-hexo-on-win7/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
+      <strong class="article-nav-caption">Nieuwer</strong>
       <div class="article-nav-title">
         
           Reinstall hexo on win7
@@ -150,7 +154,7 @@
   
   
     <a href="/2016/11/29/如何搭建Github-Hexo博客（Windows版）/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ouder</strong>
       <div class="article-nav-title">如何搭建Github+Hexo博客（windows版）</div>
     </a>
   
@@ -168,7 +172,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Labels</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/main/">main</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
     </div>
@@ -187,7 +191,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
     </div>
@@ -197,9 +201,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/08/03/Reinstall-Hexo-on-macOSSierra/">Reinstall Hexo on macOSSierra</a>
+          </li>
         
           <li>
             <a href="/2017/08/02/Reinstall-hexo-on-win7/">Reinstall hexo on win7</a>

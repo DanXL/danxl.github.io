@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Reinstall Hexo on macOSSierra | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="re-install hexo on macOS Sierra 为了方便随时写作，我也将Mac上进行了重新安装。上次把Mac恢复出厂设置之后，所有的东西都需要重新来一遍了。这次采用了稍微不同的方法——使用Homebrew来安装，这可以让我在Dependencies和Security上省心一些。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reinstall Hexo on macOSSierra">
+<meta property="og:url" content="http://yoursite.com/2017/08/03/Reinstall-Hexo-on-macOSSierra/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="re-install hexo on macOS Sierra 为了方便随时写作，我也将Mac上进行了重新安装。上次把Mac恢复出厂设置之后，所有的东西都需要重新来一遍了。这次采用了稍微不同的方法——使用Homebrew来安装，这可以让我在Dependencies和Security上省心一些。">
+<meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170804001431/Article005/jpg/PIC_20170803_MacHexoFailed.PNG">
+<meta property="og:updated_time" content="2017-08-03T16:27:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Reinstall Hexo on macOSSierra">
+<meta name="twitter:description" content="re-install hexo on macOS Sierra 为了方便随时写作，我也将Mac上进行了重新安装。上次把Mac恢复出厂设置之后，所有的东西都需要重新来一遍了。这次采用了稍微不同的方法——使用Homebrew来安装，这可以让我在Dependencies和Security上省心一些。">
+<meta name="twitter:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170804001431/Article005/jpg/PIC_20170803_MacHexoFailed.PNG">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Reinstall-Hexo-on-macOSSierra" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/03/Reinstall-Hexo-on-macOSSierra/" class="article-date">
+  <time datetime="2017-08-03T15:55:18.000Z" itemprop="datePublished">2017-08-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Reinstall Hexo on macOSSierra
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="re-install-hexo-on-macOS-Sierra"><a href="#re-install-hexo-on-macOS-Sierra" class="headerlink" title="re-install hexo on macOS Sierra"></a>re-install hexo on macOS Sierra</h1><hr>
+<p>为了方便随时写作，我也将Mac上进行了重新安装。上次把Mac恢复出厂设置之后，所有的东西都需要重新来一遍了。这次采用了稍微不同的方法——使用Homebrew来安装，这可以让我在Dependencies和Security上省心一些。<br><a id="more"></a></p>
+<h2 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a>安装Homebrew</h2><p>Homebrew的安装需要Xcode的支持，这个在App Store中即可完成。我本身已经安装过Xcode，这里就不再说了。在App Store中下载安装即可，很简单。<br>在Terminal中输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></div></pre></td></tr></table></figure>
+<p>这句代码会下载Homebrew的安装脚本。这个过程中需要输入安装密码。<br>Homebrew经常更新，所以尽量保证你的版本最新</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew update</div></pre></td></tr></table></figure>
+<p>卸载Homebrew的方法也很简单，下载一个卸载脚本即可</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)</span>"</span></div></pre></td></tr></table></figure>
+<h2 id="利用Homebrew安装Node-js和NPM-Node-Package-Manager"><a href="#利用Homebrew安装Node-js和NPM-Node-Package-Manager" class="headerlink" title="利用Homebrew安装Node.js和NPM(Node Package Manager)"></a>利用Homebrew安装Node.js和NPM(Node Package Manager)</h2><p>利用Homebrew安装Node很简单，只需要在Terminal中输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install node</div></pre></td></tr></table></figure>
+<p>然后做好等着即可。注意，这里Terminal因为安全因素，关闭了brew的sudo途径。<br>这里遇到一个错误</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">==&gt; Pouring node-8.2.1.sierra.bottle.tar.gz</div><div class="line">Error: The `brew link` step did not complete successfully</div><div class="line">The formula built, but is not symlinked into /usr/<span class="built_in">local</span></div><div class="line">Could not symlink bin/node</div><div class="line">Target /usr/<span class="built_in">local</span>/bin/node</div><div class="line">already exists. You may want to remove it:</div><div class="line">  rm <span class="string">'/usr/local/bin/node'</span></div><div class="line"></div><div class="line">To force the link and overwrite all conflicting files:</div><div class="line">  brew link --overwrite node</div><div class="line"></div><div class="line">To list all files that would be deleted:</div><div class="line">  brew link --overwrite --dry-run node</div></pre></td></tr></table></figure>
+<p>这个错误，主要是安装位置已经有Homebrew所带有的npm了，且以root权限存在。这导致在安装node时，无法写入新的npm。需要先将这个先存在的npm删除掉。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall npm -g</div></pre></td></tr></table></figure>
+<p>现在的解决方案为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rm -rf /usr/<span class="built_in">local</span>/lib/node_modules/npm</div><div class="line">brew unlink node</div><div class="line">brew link node</div></pre></td></tr></table></figure>
+<p>手动删除掉独立的node，再重新连接到node。<br>等安装好，用以下查看版本信息的命令测试一下。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">Npm -v</div></pre></td></tr></table></figure>
+<p>这时竟然还有一个问题！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-bash: npm: <span class="built_in">command</span> not found</div></pre></td></tr></table></figure>
+<p>我没有成功的将npm安装上，于是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ brew update</div><div class="line">$ brew uninstall node</div><div class="line">$ brew install node</div></pre></td></tr></table></figure>
+<p>卸载重装一下就好了。<br>如果需要更新<code>node</code>/<code>npm</code>，只需要</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">brew update</div><div class="line">brew upgrade node</div></pre></td></tr></table></figure>
+<p>So easy!</p>
+<h2 id="利用Homebrew安装Git"><a href="#利用Homebrew安装Git" class="headerlink" title="利用Homebrew安装Git"></a>利用Homebrew安装Git</h2><p>同Node.js和NPM，安装Git就是一样的步骤了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">brew install git</div><div class="line">git --version</div></pre></td></tr></table></figure>
+<p>同时，我们也需要将Git与GitHub账号建立SSH关联。  </p>
+<h4 id="Step1-检查SSH-Keys是否存在，如果存在则跳过Step-2"><a href="#Step1-检查SSH-Keys是否存在，如果存在则跳过Step-2" class="headerlink" title="Step1 检查SSH Keys是否存在，如果存在则跳过Step 2"></a>Step1 检查SSH Keys是否存在，如果存在则跳过Step 2</h4><h4 id="Step2-生成新的SSH-Key"><a href="#Step2-生成新的SSH-Key" class="headerlink" title="Step2 生成新的SSH Key"></a>Step2 生成新的SSH Key</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C “your_email@example.com<span class="string">"</span></div></pre></td></tr></table></figure>
+<p>默认情况下，会在相应路径下（~/.ssh/id_rsa.pub）生成id_rsa和id_rsa.pub两个文件，其中前者是私钥，后者是公钥。私钥要保护好，公钥要上传到GitHub用于验证。  </p>
+<h4 id="Step3-上传SSH-Key"><a href="#Step3-上传SSH-Key" class="headerlink" title="Step3 上传SSH Key"></a>Step3 上传SSH Key</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pbcopy &lt; ~/.ssh/id_rsa.pub</div></pre></td></tr></table></figure>
+<p>同Win7版本一样，将密钥复制到剪切板，然后打开登录GitHub -&gt; Account Settings -&gt; SSH keys and GPG keys -&gt; New SSH key -&gt; 填写并Add SSH key。<br>完成后测试一下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -T git@github.com</div><div class="line">The authenticity of host <span class="string">'github.com (192.30.255.112)'</span> can<span class="string">'t be established.</span></div><div class="line"><span class="string">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span></div><div class="line"><span class="string">Are you sure you want to continue connecting (yes/no)?</span></div></pre></td></tr></table></figure>
+<p>提示无法建立授权，是否继续，输入yes继续，并提供macOS密码。</p>
+<h2 id="使用NPM安装HEXO"><a href="#使用NPM安装HEXO" class="headerlink" title="使用NPM安装HEXO"></a>使用NPM安装HEXO</h2><p>根据Hexo官网的说法，在Mac中安装Hexo需要安装Xcode中的Command Line Tools（Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install），不过我的V8.3.3并没有Download这一项，利用安装命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$  xcode-select —install</div><div class="line">xcode-select: error: <span class="built_in">command</span> line tools are already installed, use <span class="string">"Software Update"</span> to install updates</div></pre></td></tr></table></figure>
+<p>告诉我已经安装过了，应该是现在的Xcode版本已经自带有Command Line Tools了。那么直接安装Hexo好了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  sudo npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>这里又遇到了一个坑，Hexo的安装因为权限被拒绝了。且出现了一个无法解决的问题。<br><img src="http://ohfy7y2ev.bkt.clouddn.com/T20170804001431/Article005/jpg/PIC_20170803_MacHexoFailed.PNG" alt=""><br>大家认为这个问题来自于Homebrew所创建的符号链接（symlink）与NPM的自我更新出现了冲突<sup><a href="https://github.com/Homebrew/legacy-homebrew/issues/22408" target="_blank" rel="external">1</a> <a href="https://github.com/npm/npm/issues/3794" target="_blank" rel="external">2</a></sup>。那我等只能呵呵了。网上也给出了各种workaround，但是都多多少少有些瑕疵。比较好的方案就是不用Homebrew安装Node，这是一个大坑。</p>
+<p>于是删掉了Homebrew的node package，去<a href="https://nodejs.org/" target="_blank" rel="external">官网</a>下载了安装包<code>.pkg</code>来手动安装了<code>Node</code>/<code>NPM</code>。这样再安装Hexo是没有问题的。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  sudo npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>再初始化到指定文件夹，并进行dependencies安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;FOLDNAME&gt;</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
+<p>预览测试，本地预览地址<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<h2 id="关联Hexo与GitHub账号"><a href="#关联Hexo与GitHub账号" class="headerlink" title="关联Hexo与GitHub账号"></a>关联Hexo与GitHub账号</h2><p>这个就没什么可说的了，就是将GitHub账号写入到Hexo文件夹下面的<code>_config.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:</span> <span class="string">DanXL/DanXL.github.io.git</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure>
+<p>再回到cmd中，安装上git形式部署hexo的模块，执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>至此，所有的安装都已经完成。</p>
+<h2 id="待补的坑"><a href="#待补的坑" class="headerlink" title="待补的坑"></a>待补的坑</h2><p>最后，还有几点在发布Win7版时的编辑上的坑。  </p>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> 摘要会在正文中作为第一段出来，所以不用写两遍。  </li>
+<li style="list-style: none"><input type="checkbox"> 代码没有自动换行，需要解决。  </li>
+<li style="list-style: none"><input type="checkbox"> 单引号会被标注文本，英文中的“‘”就会比较尴尬。  </li>
+<li style="list-style: none"><input type="checkbox" checked> 今天下班在公司终于把之前的一个bug给解决了。就是代码高亮的问题。原来是三个撇标（```）后面不可以加空格，这会使得无法识别其代码块。  </li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/08/03/Reinstall-Hexo-on-macOSSierra/" data-id="cj5wntyp60000215uza520507" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/02/Reinstall-hexo-on-win7/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Reinstall hexo on win7</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/main/">main</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/main/" style="font-size: 10px;">main</a> <a href="/tags/tutorial/" style="font-size: 10px;">tutorial</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/03/Reinstall-Hexo-on-macOSSierra/">Reinstall Hexo on macOSSierra</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/02/Reinstall-hexo-on-win7/">Reinstall hexo on win7</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/01/如何搭建Github-Hexo博客（Mac-OS-Sierra版）/">如何搭建Github-Hexo博客（Mac OS Sierra版）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/29/如何搭建Github-Hexo博客（Windows版）/">如何搭建Github+Hexo博客（windows版）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/26/开篇/">开篇</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
