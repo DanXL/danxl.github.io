@@ -103,7 +103,7 @@
 <meta property="og:description" content="觉得Hexo默认的主题着实难看，尤其是代码高亮的那个大黑块，审美难以接受。于是，想着换一个简单方便又美观的主题。在网上找了一圈之后，暂时也没有很中意的，于是先用比较火热的NexT来练练手，熟悉一下Hexo的主题配置。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ohfy7y2ev.bkt.clouddn.com/T20170806214900/Article006/jpg/CodeHighlightHexoDefault.PNG">
-<meta property="og:updated_time" content="2017-08-06T14:38:55.000Z">
+<meta property="og:updated_time" content="2017-08-06T14:50:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo的主题修改">
 <meta name="twitter:description" content="觉得Hexo默认的主题着实难看，尤其是代码高亮的那个大黑块，审美难以接受。于是，想着换一个简单方便又美观的主题。在网上找了一圈之后，暂时也没有很中意的，于是先用比较火热的NexT来练练手，熟悉一下Hexo的主题配置。">
@@ -369,11 +369,11 @@
 <h1 id="安装NexT"><a href="#安装NexT" class="headerlink" title="安装NexT"></a>安装NexT</h1><p>安装NexT并不难，只需要拷贝主题文件到<code>themes</code>目录下即可。</p>
 <h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><p>这里有两个方式，一个通过<code>Git Clone</code>获取最新版，一个是直接下载稳定版本。</p>
 <ol>
-<li>通过<code>Git Clone</code>获得最新版<br>在终端中，定位到Hexo目录下</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> your-hexo-site</div><div class="line">git <span class="built_in">clone</span> <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
-<ol>
-<li>下载稳定版<br>在NexT的<a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="external">发布版面</a>下载所需要的版本代码，解压后放到<code>theme</code>目录下，并将解压后文件夹重命名为<code>next</code>。</li>
+<li><p>通过<code>Git Clone</code>获得最新版<br> 在终端中，定位到Hexo目录下</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> your-hexo-site</div><div class="line">git <span class="built_in">clone</span> <span class="built_in">clone</span> https://github.com/iissnan/hexo-	theme-next themes/next</div></pre></td></tr></table></figure>
+</li>
+<li><p>下载稳定版<br> 在NexT的<a href="https://github.com/iissnan/hexo-    theme-next/releases" target="_blank" rel="external">发布版面</a>下载所需要的版本代码，解压后放到    <code>theme</code>目录下，并将解压后文件夹重命名为<code>next</code>。</p>
+</li>
 </ol>
 <h2 id="启用NexT"><a href="#启用NexT" class="headerlink" title="启用NexT"></a>启用NexT</h2><p>下载完成后，打开<u><strong>站点配置文件</strong></u>，找到<code>theme</code>字段，更改其值为<code>next</code>。  </p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">theme:</span> <span class="string">next</span></div></pre></td></tr></table></figure>
@@ -456,75 +456,36 @@
 <h1 id="设置菜单"><a href="#设置菜单" class="headerlink" title="设置菜单"></a>设置菜单</h1><p>菜单的配置包括三部分：1）菜单项（名称和链接）、2）菜单项显示文本、3）菜单对应图标。NexT使用的是<a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a>提供的图标，Font Awesome一共可以提供600+的质优图标。</p>
 <p>菜单的设置主要通过对<u><strong>主题配置文件</strong></u>的修改来实现。</p>
 <ol>
-<li>设定菜单内容<br>对应的字段是<code>menu</code>。菜单内容的设置格式为：<code>item_name: link</code>。其中<code>item_name</code>是一个<code>VarName</code>，并不会显示在菜单上。</li>
+<li><p>设定菜单内容<br> 对应的字段是<code>menu</code>。菜单内容的设置格式为：<code>item_name: link</code>。其中<code>item_name</code>是一个<code>VarName</code>，并不会显示在菜单上。</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span> <span class="attr">home:</span> <span class="string">/</span> </div><div class="line">  	<span class="attr">archives:</span> <span class="string">/archives</span> </div><div class="line">  	<span class="comment">#about: /about </span></div><div class="line">  	<span class="comment">#categories: /categories </span></div><div class="line">  	<span class="attr">tags:</span> <span class="string">/tags</span> </div><div class="line">  	<span class="comment">#commonweal: /404.html</span></div></pre></td></tr></table></figure>
+<p> 如果将站点运行在子目录中，将链接前面的<code>/</code>去掉即可。NexT默认的菜单有以下几项：</p>
+<p> |键值|设定值|显示文本（简体中文）|<br> |:—-|—-|—-:|<br> |home |home: /|主页 |<br> |archives |archives: /archives|归档页|<br> |categories |categories: /categories|分类页<sup>1</sup>|<br> |tags |tags: /tags|标签页<sup>1</sup>|<br> |about |about: /about|关于页面<sup>1</sup>|<br> |commonweal |commonweal: /404.html|公益 404<sup>1</sup>|</p>
+<p> <sup>1</sup>：需要手动创建这个页面。</p>
+</li>
 </ol>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span> <span class="attr">home:</span> <span class="string">/</span> </div><div class="line"><span class="attr">   archives:</span> <span class="string">/archives</span> </div><div class="line">   <span class="comment">#about: /about </span></div><div class="line">   <span class="comment">#categories: /categories </span></div><div class="line"><span class="attr">   tags:</span> <span class="string">/tags</span> </div><div class="line">   <span class="comment">#commonweal: /404.html</span></div></pre></td></tr></table></figure>
-<p>如果将站点运行在子目录中，将链接前面的<code>/</code>去掉即可。NexT默认的菜单有以下几项：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">键值</th>
-<th>设定值</th>
-<th style="text-align:right">显示文本（简体中文）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">home</td>
-<td>home: /</td>
-<td style="text-align:right">主页</td>
-</tr>
-<tr>
-<td style="text-align:left">archives</td>
-<td>archives: /archives</td>
-<td style="text-align:right">归档页</td>
-</tr>
-<tr>
-<td style="text-align:left">categories</td>
-<td>categories: /categories</td>
-<td style="text-align:right">分类页<sup>1</sup></td>
-</tr>
-<tr>
-<td style="text-align:left">tags</td>
-<td>tags: /tags</td>
-<td style="text-align:right">标签页<sup>1</sup></td>
-</tr>
-<tr>
-<td style="text-align:left">about</td>
-<td>about: /about</td>
-<td style="text-align:right">关于页面<sup>1</sup></td>
-</tr>
-<tr>
-<td style="text-align:left">commonweal</td>
-<td>commonweal: /404.html</td>
-<td style="text-align:right">公益 404<sup>1</sup></td>
-</tr>
-</tbody>
-</table>
-<p><sup>1</sup>：需要手动创建这个页面。</p>
 <ol>
-<li>设置菜单项的显示文本，即Label。<br>Hexo在生成页面的时候，将使用<code>VarName</code>来匹配对应的语言翻译，并找到Label用以显示。这些翻译文本放置在NexT主题目录下的<code>languages/{language}.yml</code> 。<code>{language}</code>为所使用的语言，我这里就是<code>next/languages/zh-Hans.yml</code>。如果，我需要添加一个菜单项<code>NewMenu</code>，那么就需要修改中文的翻译文件<code>zh-Hans.yml</code>，在<code>menu</code>字段下添加一行：</li>
+<li><p>设置菜单项的显示文本，即Label。<br> Hexo在生成页面的时候，将使用<code>VarName</code>来匹配对应的语言翻译，并找到Label用以显示。这些翻译文本放置在NexT主题目录下的<code>languages/{language}.yml</code> 。<code>{language}</code>为所使用的语言，我这里就是<code>next/languages/zh-Hans.yml</code>。如果，我需要添加一个菜单项<code>NewMenu</code>，那么就需要修改中文的翻译文件<code>zh-Hans.yml</code>，在<code>menu</code>字段下添加一行：</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span> </div><div class="line"> 		<span class="attr">home:</span> <span class="string">首页</span> </div><div class="line">  		<span class="attr">archives:</span> <span class="string">归档</span> </div><div class="line">   	<span class="attr">categories:</span> <span class="string">分类</span> </div><div class="line">   	<span class="attr">tags:</span> <span class="string">标签</span> </div><div class="line">   	<span class="attr">about:</span> <span class="string">关于</span> </div><div class="line">   	<span class="attr">search:</span> <span class="string">搜索</span> </div><div class="line">   	<span class="attr">commonweal:</span> <span class="string">公益404</span> </div><div class="line">   	<span class="attr">newmenu:</span> <span class="string">新菜单</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>设定菜单项图标。<br> 菜单图标的对应字段是<code>menu_icons</code>，其设定格式为<code>item_name: icon_name</code>，<code>item_name</code>为<code>item</code>的<code>VarName</code>，<code>icon_name</code>为Font Awesome图标的名字。而<code>enable</code>可用于控制是否显示图标。</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu_icons:</span> </div><div class="line">   	<span class="attr">enable:</span> <span class="literal">true</span> </div><div class="line">   	<span class="comment"># Icon Mapping. </span></div><div class="line">   	<span class="attr">home:</span> <span class="string">home</span> </div><div class="line">   	<span class="attr">about:</span> <span class="string">user</span> </div><div class="line">   	<span class="attr">categories:</span> <span class="string">th</span> </div><div class="line">   	<span class="attr">tags:</span> <span class="string">tags</span> </div><div class="line">   	<span class="attr">archives:</span> <span class="string">archive</span> </div><div class="line">   	<span class="attr">commonweal:</span> <span class="string">heartbeat</span></div></pre></td></tr></table></figure>
+<p> 如果菜单项与菜单图标无法匹配，NexT会用问号来显示。</p>
+</li>
 </ol>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span> </div><div class="line"><span class="attr">    home:</span> <span class="string">首页</span> </div><div class="line"><span class="attr">    archives:</span> <span class="string">归档</span> </div><div class="line"><span class="attr">    categories:</span> <span class="string">分类</span> </div><div class="line"><span class="attr">    tags:</span> <span class="string">标签</span> </div><div class="line"><span class="attr">    about:</span> <span class="string">关于</span> </div><div class="line"><span class="attr">    search:</span> <span class="string">搜索</span> </div><div class="line"><span class="attr">    commonweal:</span> <span class="string">公益404</span> </div><div class="line"><span class="attr">    newmenu:</span> <span class="string">新菜单</span></div></pre></td></tr></table></figure>
-<ol>
-<li>设定菜单项图标。<br>菜单图标的对应字段是<code>menu_icons</code>，其设定格式为<code>item_name: icon_name</code>，<code>item_name</code>为<code>item</code>的<code>VarName</code>，<code>icon_name</code>为Font Awesome图标的名字。而<code>enable</code>可用于控制是否显示图标。</li>
-</ol>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu_icons:</span> </div><div class="line"><span class="attr">    enable:</span> <span class="literal">true</span> </div><div class="line">    <span class="comment"># Icon Mapping. </span></div><div class="line"><span class="attr">    home:</span> <span class="string">home</span> </div><div class="line"><span class="attr">    about:</span> <span class="string">user</span> </div><div class="line"><span class="attr">    categories:</span> <span class="string">th</span> </div><div class="line"><span class="attr">    tags:</span> <span class="string">tags</span> </div><div class="line"><span class="attr">    archives:</span> <span class="string">archive</span> </div><div class="line"><span class="attr">    commonweal:</span> <span class="string">heartbeat</span></div></pre></td></tr></table></figure>
-<p>如果菜单项与菜单图标无法匹配，NexT会用问号来显示。</p>
 <h1 id="设置侧栏"><a href="#设置侧栏" class="headerlink" title="设置侧栏"></a>设置侧栏</h1><p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示，并放置于右侧位置。 可以通过修改<u><strong>主题配置文件</strong></u>中的<code>sidebar</code>字段来控制侧栏的行为。侧栏的设置包括两个部分：侧栏的位置和侧栏的显示时机。</p>
 <ol>
-<li>设置侧栏位置<br>修改<code>sidebar.pisition</code>的值，可以改变侧栏的位置，可选值有<code>left</code>/<code>right</code>。</li>
-</ol>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">sidebar:</span> </div><div class="line"><span class="attr">    position:</span> <span class="string">left</span></div></pre></td></tr></table></figure>
-<ol>
-<li>设置侧栏显示时机<br>修改<code>sidebar.display</code>的值，可以改变侧栏显示的时机，可选值如下：</li>
-</ol>
+<li><p>设置侧栏位置<br> 修改<code>sidebar.pisition</code>的值，可以改变侧栏的位置，可选值有<code>left</code>/<code>right</code>。</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">sidebar:</span> </div><div class="line">  	 <span class="attr">position:</span> <span class="string">left</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>设置侧栏显示时机<br> 修改<code>sidebar.display</code>的值，可以改变侧栏显示的时机，可选值如下：</p>
 <ul>
 <li><code>post</code> — 默认行为，在文章页面（拥有目录列表时）显示</li>
 <li><code>always</code> — 在所有页面显示</li>
 <li><code>hide</code> — 在所有页面隐藏（可手动打开）</li>
 <li><code>remove</code> — 移除</li>
 </ul>
+</li>
+</ol>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">sidebar:</span> </div><div class="line"><span class="attr">    display:</span> <span class="string">post</span></div></pre></td></tr></table></figure>
 <h1 id="设置头像"><a href="#设置头像" class="headerlink" title="设置头像"></a>设置头像</h1><p>在<u><strong>主题配置文件</strong></u>，修改字段<code>avatar</code>，值设置成头像的链接地址。其中，头像的链接地址可以是：</p>
 <table>
@@ -554,17 +515,16 @@
 </ol>
 <h1 id="添加新页面"><a href="#添加新页面" class="headerlink" title="添加新页面"></a>添加新页面</h1><p>比如说，添加“分类”页面，有以下几步完成：</p>
 <ol>
-<li>新建一个页面，命名为 categories 。命令如下</li>
+<li><p>新建一个页面，命名为 categories 。命令如下</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hexo new page categories</div></pre></td></tr></table></figure>
+</li>
+<li><p>Step2 编辑上一步中新页面如下：</p>
+ <figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 分类</div><div class="line">date: 2017-08-06 14:13:23</div><div class="line">type: "categories"</div><div class="line">comments: false</div><div class="line">---</div></pre></td></tr></table></figure>
+</li>
+<li><p>配置<u><strong>主题配置文件</strong></u></p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span></div><div class="line"><span class="attr">  home:</span> <span class="string">/</span></div><div class="line"><span class="attr">  archives:</span> <span class="string">/archives</span></div><div class="line"><span class="attr">  categories:</span> <span class="string">/categories</span></div></pre></td></tr></table></figure></li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hexo new page categories</div></pre></td></tr></table></figure>
-<ol>
-<li>Step2 编辑上一步中新页面如下：</li>
-</ol>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 分类</div><div class="line">date: 2017-08-06 14:13:23</div><div class="line">type: "categories"</div><div class="line">comments: false</div><div class="line">---</div></pre></td></tr></table></figure>
-<ol>
-<li>配置<u><strong>主题配置文件</strong></u></li>
-</ol>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span></div><div class="line"><span class="attr">  home:</span> <span class="string">/</span></div><div class="line"><span class="attr">  archives:</span> <span class="string">/archives</span></div><div class="line"><span class="attr">  categories:</span> <span class="string">/categories</span></div></pre></td></tr></table></figure>
+
       
     </div>
     
